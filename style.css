@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+:root{
+    --cor-primaria: #01E746;
+    --cor-secundaria: rgb(19, 18, 18);
+    --cor-terciaria: rgb(230, 230, 230);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.cabecalho{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+}
+.cabecalho__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+.cabecalho__menu__botoes{
+    text-decoration: none;
+    font-family: 'Krona one', sans-serif;
+    color: var(--cor-primaria);
+    padding: 4% 10%;
+    background-color:var(--cor-secundaria);
+    border-radius: 10px;
+
+}
+.apresentacao{
+    height: 80%;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.apresentacao__texto{
+    width: 50%;
+    color: var(--cor-terciaria);
+    font-family: 'Krona one', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacao__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.apresentacao__menu__botoes{
+    text-decoration: none;
+    margin-top: 20%;
+    padding: 4% 10%;
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+.apresentacao__imagem{
+    height: 40%;
+    width: 16%;
+}
+.rodape{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    background-color: var(--cor-primaria);
+}
+.rodape__texto{
+    font-family: 'Krona one', sans-serif;
+    color: var(--cor-terciaria);
+}
+.rodape__imagem{
+    height: 30px;
+    width: 30px;
+}
+span{
+    color: var(--cor-primaria);
+}
+.cabecalho__menu__botoes:hover{
+    color: #1DA1F2;
+    transition: 0.5s;
+}
+.apresentacao__menu__botoes:hover{
+    background-color: #1DA1F2;
+    transition: 0.5s; 
+}
