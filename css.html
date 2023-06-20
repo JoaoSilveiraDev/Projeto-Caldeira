@@ -1,62 +1,143 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+:root{
+    --cor-primaria: #01E746;
+    --cor-secundaria: rgb(19, 18, 18);
+    --cor-terciaria: rgb(230, 230, 230);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.cabecalho{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+}
+.cabecalho__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.cabecalho__menu__botoes{
+    text-decoration: none;
+    font-family: 'Krona one', sans-serif;
+    color: var(--cor-primaria);
+    padding: 4% 10%;
+    background-color:var(--cor-secundaria);
+    border-radius: 10px;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Caldeira Interaction</title>
-</head>
-
-<body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a href="home.html" class="cabecalho__menu__botoes">Home</a>
-            <a href="html.html" class="cabecalho__menu__botoes">HTML</a>
-            <a href="css.html" class="cabecalho__menu__botoes">CSS</a>
-            <a href="javaScript.html" class="cabecalho__menu__botoes">JavaScript</a>
-            <a href="java.html" class="cabecalho__menu__botoes">Java</a>
-            <a href="" class="cabecalho__menu__botoes">CheckList</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <div class="apresentacao__container1">
-            <p class="apresentacao__container__texto">Entenda os conceitos básicos do HTML: O CSS é usado para estilizar
-                os elementos HTML, então é importante ter uma compreensão básica de HTML. Aprenda como os elementos HTML
-                são estruturados e como as tags são utilizadas.
-
-                Estude a sintaxe do CSS: Familiarize-se com a sintaxe básica do CSS, que inclui seletores, propriedades
-                e valores. Aprenda como selecionar elementos HTML usando seletores e como aplicar estilos usando
-                diferentes propriedades e valores.
-
-                Crie uma página HTML básica: Comece criando uma página HTML simples com alguns elementos básicos, como
-                títulos, parágrafos e listas. Isso permitirá que você pratique a aplicação de estilos a esses elementos
-                usando CSS.
-
-                Use ferramentas de desenvolvimento web: Utilize as ferramentas de desenvolvimento web integradas nos
-                navegadores modernos, como o Google Chrome ou Firefox. Essas ferramentas permitem que você inspecione e
-                modifique o código CSS em tempo real, facilitando o aprendizado e a experimentação.
-        </div>
-        <div class="apresentacao__container">
-            <p class="apresentacao__container__texto">Experimente exemplos e tutoriais: Procure exemplos e tutoriais
-                online que o guiem por diferentes conceitos e técnicas de CSS. Você pode encontrar tutoriais passo a
-                passo, exercícios práticos e projetos para construir. Pratique esses exemplos por conta própria e
-                experimente diferentes estilos e efeitos.
-
-                Crie projetos pessoais: Assim que se sentir confortável com os conceitos básicos, comece a criar seus
-                próprios projetos pessoais. Você pode tentar replicar designs de sites que você goste ou criar seu
-                próprio design do zero. Quanto mais você praticar, melhorará suas habilidades em CSS.
-
-                Participe de comunidades online: Junte-se a comunidades online de desenvolvimento web, como fóruns ou
-                grupos em redes sociais. Faça perguntas, compartilhe seus projetos e obtenha feedback de outros
-                desenvolvedores. A interação com a comunidade pode ser muito útil para aprender e crescer suas
-                habilidades em CSS.</p>
-        </div>
-    </main>
-    <footer class="rodape">
-        <h4 class="rodape__texto">Nova Geração - Programação</h4>
-        <img src="./caldeira.png" alt="" class="rodape__imagem">
-    </footer>
-</body>
-
-</html>
+}
+.apresentacao{
+    height: 80%;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap:10%;
+}
+.apresentacao__home{
+    height: 80%;
+    background-image: url(./WhatsApp\ Image\ 2023-06-20\ at\ 15.15.46.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap:8%;
+}
+.apresentacao__botao{
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: 'Krona one', sans-serif;
+    padding: 15px 30px;
+    color: var(--cor-terciaria);
+    border-radius: 8px;
+    /* border: 0.7px solid var(--cor-secundaria); */
+}
+.apresentacao__home__texto{
+    height: 60%;
+    width: 40%;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.apresentacao__texto{
+    color: var(--cor-terciaria);
+    font-family: 'Krona one', sans-serif;
+    width: 50%;
+    background-color: var(--cor-secundaria);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.apresentacao__container__texto{
+    color: var(--cor-terciaria);
+    font-family: 'Krona one', sans-serif;
+    margin: 10px;
+}
+.apresentacao__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.apresentacao__menu__botoes{
+    text-decoration: none;
+    margin-top: 20%;
+    padding: 4% 10%;
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    color: var(--cor-terciaria);
+    text-align: center;
+}
+.apresentacao__imagem{
+    height: 60px;
+    width: 60px;
+}
+.rodape{
+    height: 10%;
+    background-color: var(--cor-primaria);
+    font-family: 'Krona one', sans-serif;
+    color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.rodape__imagem{
+    height: 30px;
+    width: 30px;
+}
+span{
+    color: var(--cor-primaria);
+}
+.cabecalho__menu__botoes:hover{
+    color: #1DA1F2;
+    transition: 0.5s;
+}
+.apresentacao__menu__botoes:hover{
+    background-color: #1DA1F2;
+    transition: 0.5s; 
+}
+.apresentacao__botao:hover{
+    background-color: rgb(3, 65, 3);
+    padding: 40px 30px;
+    margin: 60px 80px;
+    transform: rotate(360deg);
+    transition: 2s;
+}
