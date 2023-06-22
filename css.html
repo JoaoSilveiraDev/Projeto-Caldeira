@@ -1,143 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-:root{
-    --cor-primaria: #01E746;
-    --cor-secundaria: rgb(19, 18, 18);
-    --cor-terciaria: rgb(230, 230, 230);
-}
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    height: 100vh;
-}
-.cabecalho{
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor-secundaria);
-}
-.cabecalho__menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-.cabecalho__menu__botoes{
-    text-decoration: none;
-    font-family: 'Krona one', sans-serif;
-    color: var(--cor-primaria);
-    padding: 4% 10%;
-    background-color:var(--cor-secundaria);
-    border-radius: 10px;
+<!DOCTYPE html>
+<html lang="pt-br">
 
-}
-.apresentacao{
-    height: 80%;
-    background-color: var(--cor-secundaria);
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap:10%;
-}
-.apresentacao__home{
-    height: 80%;
-    background-image: url(./WhatsApp\ Image\ 2023-06-20\ at\ 15.15.46.jpg);
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap:8%;
-}
-.apresentacao__botao{
-    background-color: var(--cor-primaria);
-    text-decoration: none;
-    font-family: 'Krona one', sans-serif;
-    padding: 15px 30px;
-    color: var(--cor-terciaria);
-    border-radius: 8px;
-    /* border: 0.7px solid var(--cor-secundaria); */
-}
-.apresentacao__home__texto{
-    height: 60%;
-    width: 40%;
-    background-color: var(--cor-secundaria);
-    border-radius: 8px;
-    opacity: 0.8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.apresentacao__texto{
-    color: var(--cor-terciaria);
-    font-family: 'Krona one', sans-serif;
-    width: 50%;
-    background-color: var(--cor-secundaria);
-    opacity: 0.8;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-}
-.apresentacao__container__texto{
-    color: var(--cor-terciaria);
-    font-family: 'Krona one', sans-serif;
-    margin: 10px;
-}
-.apresentacao__menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-}
-.apresentacao__menu__botoes{
-    text-decoration: none;
-    margin-top: 20%;
-    padding: 4% 10%;
-    background-color: var(--cor-primaria);
-    border-radius: 10px;
-    color: var(--cor-terciaria);
-    text-align: center;
-}
-.apresentacao__imagem{
-    height: 60px;
-    width: 60px;
-}
-.rodape{
-    height: 10%;
-    background-color: var(--cor-primaria);
-    font-family: 'Krona one', sans-serif;
-    color: var(--cor-terciaria);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-}
-.rodape__imagem{
-    height: 30px;
-    width: 30px;
-}
-span{
-    color: var(--cor-primaria);
-}
-.cabecalho__menu__botoes:hover{
-    color: #1DA1F2;
-    transition: 0.5s;
-}
-.apresentacao__menu__botoes:hover{
-    background-color: #1DA1F2;
-    transition: 0.5s; 
-}
-.apresentacao__botao:hover{
-    background-color: rgb(3, 65, 3);
-    padding: 40px 30px;
-    margin: 60px 80px;
-    transform: rotate(360deg);
-    transition: 2s;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Caldeira Interaction</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <img src="./programacao.png" alt="" class="apresentacao__imagem">
+            <a href="home.html" class="cabecalho__menu__botoes">Home</a>
+            <a href="html.html" class="cabecalho__menu__botoes">HTML</a>
+            <a href="css.html" class="cabecalho__menu__botoes">CSS</a>
+            <a href="javaScript.html" class="cabecalho__menu__botoes">JavaScript</a>
+            <a href="java.html" class="cabecalho__menu__botoes">Java</a>
+            <a href="checklist.html" class="cabecalho__menu__botoes">CheckList</a>
+        </nav>
+    </header>
+    <main class="apresentacao" style="background-image: url(./WhatsApp\ Image\ 2023-06-20\ at\ 16.17.17.jpeg);">
+        <div class="apresentacao__texto">
+            <p class="apresentacao__container__texto">Entenda a estrutura básica do HTML: Familiarize-se com a
+                estrutura
+                básica do HTML, que consiste em tags, elementos e atributos. Aprenda como criar uma estrutura de
+                página
+                simples com elementos como cabeçalho, corpo, parágrafos e listas.
+
+                Estude as tags HTML: Explore as diferentes tags HTML e seu propósito. Aprenda como usar tags como
+                <"h1"> para títulos, <"p"> para parágrafos, <"a"> para links e assim por diante. Entenda como as
+                            tags
+                            são
+                            aninhadas e como atributos são usados para fornecer informações adicionais aos
+                            elementos.
+
+                            Pratique com exemplos simples: Crie arquivos HTML básicos e pratique com exemplos
+                            simples.
+                            Comece com uma página simples contendo cabeçalho, parágrafos e links. À medida que
+                            ganhar
+                            confiança, experimente adicionar imagens, listas e outros elementos.
+
+                            Utilize recursos de aprendizado online: Há uma variedade de recursos online gratuitos
+                            para
+                            aprender HTML. Sites como o MDN (Mozilla Developer Network) e o W3Schools oferecem
+                            tutoriais,
+                            referências e exemplos práticos para ajudar você a entender os conceitos e a sintaxe do
+                            HTML.
+            </p>
+        </div>
+        <a href="" class="apresentacao__botao">Projeto Final Alura</a>
+    </main>
+    <footer class="rodape">
+        <h4 class="rodape__texto">Nova Geração - Programação</h4>
+        <img src="./caldeira.png" alt="" class="rodape__imagem">
+    </footer>
+</body>
+
+</html>
