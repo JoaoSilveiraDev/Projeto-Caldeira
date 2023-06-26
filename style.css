@@ -48,6 +48,7 @@ body{
 .apresentacao__home{
     height: 80%;
     background-image: url(./WhatsApp\ Image\ 2023-06-20\ at\ 15.15.46.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -57,6 +58,7 @@ body{
 .apresentacao__home__tabela{
     height: 80%;
     background-image: url(./WhatsApp\ Image\ 2023-06-20\ at\ 15.15.46.jpg);
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -112,6 +114,7 @@ body{
     color: var(--cor-terciaria);
     font-family: 'Krona one', sans-serif;
     margin: 10px;
+    text-align: justify;
 }
 .apresentacao__menu{
     display: flex;
@@ -233,7 +236,7 @@ table{
 }
 .apresentacao__botao:hover{
     background-color: rgb(3, 65, 3);
-    padding: 40px 30px;
+    padding: 20px 30px;
     margin: 60px 80px;
     transform: rotate(360deg);
     transition: 2s;

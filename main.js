@@ -140,3 +140,4 @@ botao19.addEventListener("dblclick", ()=>{
 botao20.addEventListener("dblclick", ()=>{
     botao20.innerHTML = ""
 })
+////////////////////////////////////////////
